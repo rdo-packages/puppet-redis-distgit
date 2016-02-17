@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-38a1fba6d6dce0ace9a15d6b54a9ae06cfa8f82d	puppet-redis-distgit-ptl
+# UUID          Group Name
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
+649ab3fa16d7336eb36c507e12fdd2e44239fbda       	puppet-redis-distgit-core
+38a1fba6d6dce0ace9a15d6b54a9ae06cfa8f82d        	puppet-redis-distgit-ptl
+global:Registered-Users		Registered Users
