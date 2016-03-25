@@ -12,7 +12,7 @@ BuildArch:      noarch
 
 #Requires:       puppet-apt
 Requires:       puppet-stdlib
-Requires:       puppet-epel
+#Requires:       puppet-epel
 Requires:       puppet >= 2.7.0
 
 %description
