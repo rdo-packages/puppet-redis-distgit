@@ -10,9 +10,7 @@ Source0:        https://github.com/arioch/puppet-redis/archive/%{version}.tar.gz
 
 BuildArch:      noarch
 
-#Requires:       puppet-apt
 Requires:       puppet-stdlib
-#Requires:       puppet-epel
 Requires:       puppet >= 2.7.0
 
 %description
