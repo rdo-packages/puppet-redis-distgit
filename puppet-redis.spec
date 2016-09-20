@@ -7,8 +7,8 @@
 
 
 Name:           puppet-redis
-Version:        XXX
-Release:        XXX
+Version:        1.2.3
+Release:        1%{?dist}
 Summary:        Redis module
 License:        Apache-2.0
 
@@ -49,4 +49,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/redis/
 
 
 %changelog
+* Tue Sep 20 2016 Haikel Guemar <hguemar@fedoraproject.org> - 1.2.3-1
+- Newton update 1.2.3 (6abc4f4ffbe718ed964a9672b3e75f3a88fc916d)
+
 
