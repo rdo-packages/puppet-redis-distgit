@@ -10,7 +10,7 @@ Name:           puppet-redis
 Version:        XXX
 Release:        XXX
 Summary:        Redis module
-License:        Apache-2.0
+License:        ASL 2.0
 
 URL:            http://arioch.github.io/puppet-redis/
 
