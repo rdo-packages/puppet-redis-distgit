@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-redis
-%global commit 6abc4f4ffbe718ed964a9672b3e75f3a88fc916d
+%global commit a2d63958ad8867585b0a01b9de3edffa43f9baa1
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-redis
-Version:        XXX
-Release:        XXX
+Version:        1.2.4
+Release:        1%{?alphatag}%{?dist}
 Summary:        Redis module
 License:        ASL 2.0
 
@@ -49,4 +49,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/redis/
 
 
 %changelog
+* Thu Feb 09 2017 Alfredo Moralejo <amoralej@redhat.com> 1.2.4-1.a2d6395git
+- Ocata update 1.2.4 (a2d63958ad8867585b0a01b9de3edffa43f9baa1)
 
