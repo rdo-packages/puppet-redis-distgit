@@ -51,3 +51,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/redis/
 %changelog
 
 
+# REMOVEME: error caused by commit https://github.com/arioch/puppet-redis/commit/338daa46ff1797164253c10cde341a631cee5b6f
