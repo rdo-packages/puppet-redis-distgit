@@ -15,6 +15,7 @@ License:        ASL 2.0
 URL:            http://arioch.github.io/puppet-redis/
 
 Source0:        https://github.com/arioch/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
+Patch0:         0001-Initial-rhel-8-support.patch
 
 BuildArch:      noarch
 
@@ -39,6 +40,8 @@ find . \( -name spec -o -name ext \) | xargs rm -rf
 
 %install
 rm -rf %{buildroot}
+# https://github.com/arioch/puppet-redis/pull/284
+%patch0 -p1
 install -d -m 0755 %{buildroot}/%{_datadir}/openstack-puppet/modules/redis/
 cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/redis/
 
