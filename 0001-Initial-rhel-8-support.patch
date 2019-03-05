@@ -1,0 +1,28 @@
+From 119add61470812e0583ef3871e52b67a5e0b4a9a Mon Sep 17 00:00:00 2001
+From: Michele Baldessari <michele@acksyn.org>
+Date: Thu, 31 Jan 2019 17:18:13 +0100
+Subject: [PATCH] Initial rhel 8 support
+
+Let's start supporting RHEL 8 as a distribution. For the time being
+let's keep the same version of redis as RHEL 7.
+This is needed for us deploying openstack on top of RHEL8.
+---
+ manifests/params.pp | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/manifests/params.pp b/manifests/params.pp
+index 2714fdd..3e985ea 100644
+--- a/manifests/params.pp
++++ b/manifests/params.pp
+@@ -207,6 +207,11 @@
+ 
+           $service_group             = 'redis'
+         }
++        '8': {
++          $minimum_version           = '3.2.3'
++
++          $service_group             = 'redis'
++        }
+         default: {
+           fail("Not sure what Redis version is avaliable upstream on your release: ${::operatingsystemmajrelease}")
+         }
