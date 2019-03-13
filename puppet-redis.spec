@@ -15,7 +15,6 @@ License:        ASL 2.0
 URL:            http://arioch.github.io/puppet-redis/
 
 Source0:        https://github.com/arioch/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
-Patch0:         0001-Initial-rhel-8-support.patch
 
 BuildArch:      noarch
 
@@ -27,8 +26,6 @@ Redis module
 
 %prep
 %setup -q -n %{name}-%{upstream_version}
-# https://github.com/arioch/puppet-redis/pull/284
-%patch0 -p1
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
