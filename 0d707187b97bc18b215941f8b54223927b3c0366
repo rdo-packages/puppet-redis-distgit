@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "62237ce2_987c5e27",
+        "filename": "puppet-redis.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2019-10-03T11:07:24Z",
+      "side": 1,
+      "message": "this commit was 4.2.2-rc0, https://github.com/voxpupuli/puppet-redis/commit/be8d097f849afaca6c381d105a4bf80bbd691a40 could we update release with the milestone?",
+      "revId": "0d707187b97bc18b215941f8b54223927b3c0366",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
