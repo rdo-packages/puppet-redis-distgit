@@ -20,6 +20,7 @@ BuildArch:      noarch
 
 Requires:       puppet-stdlib
 Requires:       puppet >= 2.7.0
+Requires:       puppet-systemd
 
 %description
 Redis module
