@@ -54,4 +54,3 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/redis/
 - Update to post 4.2.2-rc0 (be8d097f849afaca6c381d105a4bf80bbd691a40)
 
 
-
