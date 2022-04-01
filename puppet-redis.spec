@@ -1,14 +1,15 @@
+%global milestone .0rc0
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-redis
-%global commit 6abc4f4ffbe718ed964a9672b3e75f3a88fc916d
+%global commit 406874a0d3010910c1df37353e24585dc4e1b840
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-redis
-Version:        XXX
-Release:        XXX
+Version:        8.2.1
+Release:        0.1%{?milestone}%{?alphatag}%{?dist}
 Summary:        Redis module
 License:        ASL 2.0
 
@@ -50,5 +51,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/redis/
 
 
 %changelog
+* Fri Apr 01 2022 RDO <dev@lists.rdoproject.org> 8.2.1-0.1.0rc0.406874agit
+- Update to post 8.2.1-rc0 (406874a0d3010910c1df37353e24585dc4e1b840)
+
 
 
