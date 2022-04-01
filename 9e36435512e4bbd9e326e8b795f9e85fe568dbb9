@@ -16,6 +16,23 @@
       "message": "needs puppet-systemd ",
       "revId": "9e36435512e4bbd9e326e8b795f9e85fe568dbb9",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "96010677_aab1c0c5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-04-01T10:50:16Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "9e36435512e4bbd9e326e8b795f9e85fe568dbb9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
