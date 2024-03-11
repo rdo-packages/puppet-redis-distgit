@@ -1,10 +1,5 @@
-%{!?upstream_version: %global upstream_version %{commit}}
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %define upstream_name puppet-redis
-%global commit 6abc4f4ffbe718ed964a9672b3e75f3a88fc916d
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-# DO NOT REMOVE ALPHATAG
-%global alphatag .%{shortcommit}git
-
 
 Name:           puppet-redis
 Version:        XXX
@@ -14,7 +9,7 @@ License:        ASL 2.0
 
 URL:            http://arioch.github.io/puppet-redis/
 
-Source0:        https://github.com/arioch/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
+Source0:        https://github.com/arioch/%{upstream_name}/archive/v%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 
@@ -26,7 +21,7 @@ Requires:       puppet-systemd
 Redis module
 
 %prep
-%setup -q -n %{name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
