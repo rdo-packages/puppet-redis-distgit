@@ -7,9 +7,9 @@ Release:        XXX
 Summary:        Redis module
 License:        ASL 2.0
 
-URL:            http://arioch.github.io/puppet-redis/
+URL:            https://github.com/voxpupuli/puppet-redis
 
-Source0:        https://github.com/arioch/%{upstream_name}/archive/v%{upstream_version}.tar.gz
+Source0:        https://github.com/voxpupuli/%{upstream_name}/archive/v%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 
