@@ -2,8 +2,8 @@
 %define upstream_name puppet-redis
 
 Name:           puppet-redis
-Version:        XXX
-Release:        XXX
+Version:        10.0.0
+Release:        1%{?dist}
 Summary:        Redis module
 License:        ASL 2.0
 
@@ -45,5 +45,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/redis/
 
 
 %changelog
+* Tue Apr 16 2024 RDO <dev@lists.rdoproject.org> 10.0.0-1
+- Update to 10.0.0
+
 
 
